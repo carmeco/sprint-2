@@ -3975,7 +3975,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: black;
+  color: #FA5959;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -11308,4 +11308,8 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.card-header {
+  border-bottom-style: dotted;
+  border-bottom-width: 3px;
 }/*# sourceMappingURL=custom.css.map */

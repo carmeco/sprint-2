@@ -10,18 +10,18 @@
 
 </head>
 <body>
-    <header class="container">
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+      <!-- Navbar -->
+      <nav class="container navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <!--Brand-->
+          <!-- Brand -->
           <a class="navbar-brand" href="index.html">
             <img src="images/logo-bookmark.svg" alt="Bookmark" width="auto" height="24">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>                
-          <!--Menu-->
+          <!-- Menu -->
           <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navbarSupportedContent">
             <div class="navbar-nav g-5">
               <a class="nav-link" href="#">Features</a>
@@ -34,7 +34,7 @@
       </nav>
 
       <!-- Home -->
-      <div class="mx-auto mt-2 row align-items-center justify-content-center">
+      <div class="container mx-auto mt-2 row align-items-center justify-content-center">
         <img class="col-md-10 col-lg-7 order-lg-2" src="images/illustration-hero.svg" alt="Hero Image">
         <div class="col-md-10 col-lg-5 text-center text-lg-start order-lg-1">
           <h1 class="fw-bold">A Simple Bookmark Manager</h1>
@@ -45,20 +45,20 @@
       </div>
     </header>
 
-    <article class="container">
+    <article>
       <!-- Features -->
-      <section id=#features class="row g-5 justify-content-center">
-        <div class="text-center col-md-10 col-lg-6">
+      <section class="container mx-auto">
+        <div class="text-center col-lg-6 mx-auto">
           <h2>Features</h2>
           <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-        <div class="col-lg-8">
-          <div class="nav nav-pills nav-justified row" id="myTab" role="tablist">
-            <button class="nav-link active" id="bookmarking-tab" data-bs-toggle="pill" data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</button>
-            <button class="nav-link" id="searching-tab" data-bs-toggle="pill" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="false">Speedy Searching</button>
-            <button class="nav-link" id="sharing-tab" data-bs-toggle="pill" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="false">Easy sharing</button>
+        <!-- Tabs -->
+        <div>
+          <div class="nav nav-pills row justify-content-center" id="myTab" role="tablist">
+            <button class="nav-link active col-lg-2" id="bookmarking-tab" data-bs-toggle="pill" data-bs-target="#bookmarking" type="button" role="tab" aria-controls="bookmarking" aria-selected="true">Simple Bookmarking</button>
+            <button class="nav-link col-lg-2" id="searching-tab" data-bs-toggle="pill" data-bs-target="#searching" type="button" role="tab" aria-controls="searching" aria-selected="false">Speedy Searching</button>
+            <button class="nav-link col-lg-2" id="sharing-tab" data-bs-toggle="pill" data-bs-target="#sharing" type="button" role="tab" aria-controls="sharing" aria-selected="false">Easy sharing</button>
           </div>
-        </div>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="bookmarking-tab">
               <div class="mx-auto mt-2 row align-items-center justify-content-center">
@@ -90,11 +90,55 @@
                 </div>
               </div>        
             </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Download the extension -->
+      <section class="container mx-auto">
+        <div class="text-center col-lg-6 mx-auto">
+          <h2>Download the extension</h2>
+          <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to priorize.</p>
+        </div>
+        <!-- Cards -->
+        <div class="row g-5 justify-content-center" style="height: 600px;">
+          <div class="col-lg-4 col-xl-3 align-self-start">
+            <div class="card text-center border-light shadow pb-3">
+              <div class="card-header">
+                <img src="images/logo-chrome.svg" class="card-img-top p-5 mx-auto" alt="Chrome" style="max-width: 300px;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Add to Chrome</h5>
+                <p class="card-text">Minimum version 62</p>
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xl-3 align-self-center">
+            <div class="card text-center border-light shadow pb-3">
+              <div class="card-header">
+                <img src="images/logo-firefox.svg" class="card-img-top p-5 mx-auto" alt="Firefox" style="max-width: 300px;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Add to Firefox</h5>
+                <p class="card-text">Minimum version 55</p>
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xl-3 align-self-end">
+            <div class="card text-center border-light shadow pb-3">
+              <div class="card-header">
+                <img src="images/logo-opera.svg" class="card-img-top p-5 mx-auto" alt="Opera" style="max-width: 300px;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Add to Opera</h5>
+                <p class="card-text">Minimum version 46</p>
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
             </div>
           </div>
         </div>
-
       </section>
     </article>
 
