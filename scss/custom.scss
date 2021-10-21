@@ -11,7 +11,7 @@ p {
 
 //Containers
 .container {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 
 //Navbar
@@ -25,6 +25,7 @@ $navbar-padding-y: 2rem;
 
 //Buttons
 $btn-font-weight: bold;
+$btn-padding-x: 1.2rem;
 
 
 //Tabs
@@ -45,6 +46,16 @@ $nav-pills-link-active-bg: transparent;
     }
 }
 
+//Accordion
+$accordion-icon-color: $primary;
+$accordion-icon-active-color: $secondary;
+$accordion-button-active-bg: white;
+$accordion-button-active-color: black;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+.accordion-button:hover{
+    color: $secondary;
+}
 
 
 

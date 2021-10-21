@@ -34,9 +34,9 @@
       </nav>
 
       <!-- Home -->
-      <div class="container mx-auto mt-2 row align-items-center justify-content-center">
-        <img class="col-md-10 col-lg-7 order-lg-2" src="images/illustration-hero.svg" alt="Hero Image">
-        <div class="col-md-10 col-lg-5 text-center text-lg-start order-lg-1">
+      <div class="container mx-auto row align-items-center justify-content-center">
+        <img class="col-auto col-lg-7 order-lg-2" src="images/illustration-hero.svg" alt="Hero Image">
+        <div class="col-auto col-lg-5 text-center text-lg-start order-lg-1">
           <h1 class="fw-bold">A Simple Bookmark Manager</h1>
           <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
           <button class="btn btn-primary">Get it on Firefox</button>
@@ -62,10 +62,10 @@
           <div class="tab-content mt-5" id="myTabContent">
             <div class="tab-pane fade show active" id="bookmarking" role="tabpanel" aria-labelledby="bookmarking-tab">
               <div class="mx-auto mt-2 row align-items-center justify-content-between">
-                <div class="col-md-10 col-lg-6">
+                <div class="col-auto col-lg-6 text-center">
                   <img class="w-100" src="images/illustration-features-tab-1.svg" alt="Simple Bookmarking">
                 </div>
-                <div class="col-md-10 col-lg-5 g-4 text-center text-lg-start">
+                <div class="col-auto col-lg-5 g-5 text-center text-lg-start">
                   <h1 class="fw-bold">Bookmark in one click</h1>
                   <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
                   <button class="btn btn-primary">More info</button>
@@ -74,10 +74,10 @@
             </div>
             <div class="tab-pane fade" id="searching" role="tabpanel" aria-labelledby="searching-tab">
               <div class="mx-auto mt-2 row align-items-center justify-content-between">
-                <div class="col-md-10 col-lg-6">
+                <div class="col-auto col-lg-6">
                   <img class="w-100" src="images/illustration-features-tab-2.svg" alt="Speedy searching">
                 </div>
-                <div class="col-md-10 col-lg-5 g-4 text-center text-lg-start">
+                <div class="col-auto col-lg-5 g-4 text-center text-lg-start">
                   <h1 class="fw-bold">Intelligent search</h1>
                   <p>Our powerful search future will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
                   <button class="btn btn-primary">More info</button>
@@ -86,10 +86,10 @@
             </div>
             <div class="tab-pane fade" id="sharing" role="tabpanel" aria-labelledby="sharing-tab">
               <div class="mx-auto mt-2 row align-items-center justify-content-between">
-                <div class="col-md-10 col-lg-6">
+                <div class="col-auto col-lg-6">
                   <img class="w-100" src="images/illustration-features-tab-3.svg" alt="Easy sharing">
                 </div>
-                <div class="col-md-10 col-lg-5 g-4 text-center text-lg-start">
+                <div class="col-auto col-lg-5 g-5 text-center text-lg-start">
                   <h1 class="fw-bold">Share your bookmarks</h1>
                   <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
                   <button class="btn btn-primary">More info</button>
@@ -107,9 +107,9 @@
           <p>We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to priorize.</p>
         </div>
         <!-- Cards -->
-        <div class="row g-5 justify-content-center" style="height: 600px;">
-          <div class="col-lg-4 col-xl-3 align-self-start">
-            <div class="card text-center border-light shadow pb-3">
+        <div class="row g-5 justify-content-center" style="min-height: 600px;">
+          <div class="col-auto align-self-start">
+            <div class="card text-center border-light shadow p-3">
               <div class="card-header">
                 <img src="images/logo-chrome.svg" class="card-img-top p-5 mx-auto" alt="Chrome" style="max-width: 300px;">
               </div>
@@ -120,8 +120,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-xl-3 align-self-center">
-            <div class="card text-center border-light shadow pb-3">
+          <div class="col-auto align-self-center">
+            <div class="card text-center border-light shadow p-3">
               <div class="card-header">
                 <img src="images/logo-firefox.svg" class="card-img-top p-5 mx-auto" alt="Firefox" style="max-width: 300px;">
               </div>
@@ -132,8 +132,8 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-xl-3 align-self-end">
-            <div class="card text-center border-light shadow pb-3">
+          <div class="col-auto align-self-end">
+            <div class="card text-center border-light shadow p-3">
               <div class="card-header">
                 <img src="images/logo-opera.svg" class="card-img-top p-5 mx-auto" alt="Opera" style="max-width: 300px;">
               </div>
@@ -144,6 +144,61 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section class="container mx-auto">
+        <div class="text-center col-lg-6 mx-auto">
+          <h2>Frequently Asked Questions</h2>
+          <p>Here are some of our FAQs. If you have any other questions you'd like answeres please feel free to e-mail us.</p>
+        </div>
+        <!-- Accordion -->
+        <div class="accordion accordion-flush col-lg-7 mx-auto" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                What is Bookmark?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Ups... no idea.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                How can I request a new browser?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Who knows...</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Is there a mobile app?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Of course not!</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                What about other Chromium browsers?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Don't use Chromium please... Firefox's better!</div>
+            </div>
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="text-center mt-5">
+          <button class="btn btn-primary">More info</button>
         </div>
       </section>
     </article>
