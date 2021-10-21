@@ -1,6 +1,12 @@
 @charset "UTF-8";
 p {
   color: grey;
+  font-size: 1.1rem;
+  padding: 0.8rem 0;
+}
+
+.container {
+  margin-bottom: 5rem;
 }
 
 .navbar-nav {
@@ -12,29 +18,13 @@ p {
   border-width: 0;
 }
 
-/* $btn-padding-y: 0.5rem;
-$btn-padding-x: 1.2rem; */
-.canvas {
-  width: 100%;
-  padding-top: 45%;
-  margin-right: -100%;
-  position: relative;
+.nav-pills .nav-link {
+  border: 1px solid black;
+  border-bottom: 1px solid #5265E1;
 }
-.canvas .rectangle {
-  background-color: #5265E1;
-  position: absolute;
-  width: 120%;
-  height: 85%;
-  margin-right: -50%;
-  border-bottom-left-radius: 200px;
-  bottom: 0;
-  right: 0;
-}
-.canvas img {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 6%;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border-bottom: 3px solid #FA5959;
 }
 
 /*!
@@ -3975,7 +3965,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #5265E1;
+  color: grey;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3985,7 +3975,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #4251b4;
+  color: black;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4027,12 +4017,12 @@ textarea.form-control-lg {
 .nav-pills .nav-link {
   background: none;
   border: 0;
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #5265E1;
+  color: black;
+  background-color: transparent;
 }
 
 .nav-fill > .nav-link,

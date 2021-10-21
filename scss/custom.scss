@@ -5,6 +5,13 @@ $secondary: #FA5959;
 //Text
 p {
     color: grey;
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+}
+
+//Containers
+.container {
+    margin-bottom: 5rem;
 }
 
 //Navbar
@@ -18,37 +25,26 @@ $navbar-padding-y: 2rem;
 
 //Buttons
 $btn-font-weight: bold;
-/* $btn-padding-y: 0.5rem;
-$btn-padding-x: 1.2rem; */
 
 
-//Images
-.canvas {
-    width: 100%;
-    padding-top: 45%;
-    margin-right: -100%;
-    position: relative;
+//Tabs
+$nav-link-color: grey;
+$nav-link-hover-color: black;
+$nav-pills-border-radius: 0;
+$nav-pills-link-active-color: black;
+$nav-pills-link-active-bg: transparent;
 
-    .rectangle {
-        background-color: $primary;
-        position: absolute;
-        width: 120%;
-        height: 85%;
-        margin-right: -50%;
-        border-bottom-left-radius: 200px;
-        bottom: 0;
-        right: 0;
+.nav-pills {
+    .nav-link {  
+      border: 1px solid black;
+      border-bottom: 1px solid $primary;
     }
-
-    img {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 6%;
+  
+    .nav-link.active,
+    .show > .nav-link {
+      border-bottom: 3px solid $secondary;
     }
 }
-
-
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
