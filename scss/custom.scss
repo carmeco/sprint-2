@@ -2,16 +2,23 @@
 $primary: #5265E1;
 $secondary: #FA5959;
 
+//Import functions and variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+//Spacing
+$custom-spacers : (
+    6: $spacer * 5,
+    7: $spacer * 8,
+    8: $spacer * 10,
+);
+$spacers: map-merge($custom-spacers, $spacers);
+
 //Text
 p {
     color: grey;
     font-size: 1.1rem;
     padding: 0.8rem 0;
-}
-
-//Containers
-.container {
-    margin-bottom: 6rem;
 }
 
 //Navbar
@@ -27,6 +34,66 @@ $navbar-padding-y: 2rem;
 $btn-font-weight: bold;
 $btn-padding-x: 1.2rem;
 
+//Image frames
+.frame {
+    display: flex;
+    width: 100%;
+    position: relative;
+    right: 0;
+    overflow: visible;
+
+    img {
+        max-width: 100%;
+    }
+
+    .rectangle {
+        position: absolute;
+        top: 2rem;
+        width: 150%;
+        height: 90%;
+        background-color: #5368df;
+        z-index: -1;
+    }
+    .rectangle.right {
+        left: 4rem;
+        border-bottom-left-radius: 8rem;
+    }
+    .rectangle.left {
+        height: 100%;
+        right: 3rem;
+        border-bottom-right-radius: 10rem;
+    }
+    @media screen and (min-width: 576px) {
+        .rectangle.right {
+            top: 3rem;
+            left: 6rem;
+        }
+        .rectangle.left {
+            right: 5rem;
+        }    
+    }
+    @media screen and (min-width: 768px) {
+        .rectangle.right {
+            top: 4rem;
+            left: 8rem;
+        }
+        .rectangle.left {
+            right: 7rem;
+        }    
+    }
+    @media screen and (min-width: 992px) {
+        .rectangle.right {
+            left: 11rem;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .rectangle.right {
+            left: 13rem;
+        }
+    }
+
+}
+
 
 //Tabs
 $nav-link-color: grey;
@@ -39,7 +106,6 @@ $nav-pills-link-active-bg: transparent;
       border: 1px solid black;
       border-bottom: 1px solid $primary;
     }
-  
     .nav-link.active,
     .show > .nav-link {
       border-bottom: 3px solid $secondary;
@@ -57,8 +123,7 @@ $accordion-button-focus-box-shadow: none;
     color: $secondary;
 }
 
-
-
+//Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 //Cards
