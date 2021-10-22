@@ -1,6 +1,7 @@
 //Theme colors
 $primary: #5265E1;
 $secondary: #FA5959;
+$dark: #242946;
 
 //Import functions and variables
 @import "../node_modules/bootstrap/scss/_functions";
@@ -94,7 +95,6 @@ $btn-padding-x: 1.2rem;
 
 }
 
-
 //Tabs
 $nav-link-color: grey;
 $nav-link-hover-color: $secondary;
@@ -122,6 +122,10 @@ $accordion-button-focus-box-shadow: none;
 .accordion-button:hover{
     color: $secondary;
 }
+
+//Footer
+$navbar-dark-color: white;
+$navbar-dark-hover-color: $secondary;
 
 //Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
