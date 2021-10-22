@@ -24,6 +24,7 @@ p {
 
 //Navbar
 $navbar-padding-y: 2rem;
+$navbar-light-hover-color: $secondary;
 .navbar-nav {
     column-gap: 2rem;
 }
@@ -42,11 +43,9 @@ $btn-padding-x: 1.2rem;
     position: relative;
     right: 0;
     overflow: visible;
-
     img {
         max-width: 100%;
     }
-
     .rectangle {
         position: absolute;
         top: 2rem;
@@ -92,7 +91,6 @@ $btn-padding-x: 1.2rem;
             left: 13rem;
         }
     }
-
 }
 
 //Tabs
@@ -134,4 +132,32 @@ $navbar-dark-hover-color: $secondary;
 .card-header {
     border-bottom-style: dotted;
     border-bottom-width: 3px;
+}
+
+//Buttons
+.btn-primary {
+    &:hover {
+        color: $primary;
+        background-color: white;
+        outline: 1px solid $primary;
+        box-shadow: 2px 2px 2px grey;
+    }
+}
+.btn-secondary {
+    color: white;
+    &:hover {
+        color: $secondary;
+        background-color: white;
+        outline: 1px solid $secondary;
+        box-shadow: 2px 2px 2px grey;
+    }
+}
+.btn-outline-dark {
+    border: white;
+    &:hover {
+        color: inherit;
+        background-color: white;
+        outline: 1px solid $dark;
+        box-shadow: 2px 2px 2px grey;
+    }
 }
