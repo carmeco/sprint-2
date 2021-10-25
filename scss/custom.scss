@@ -99,16 +99,6 @@ $nav-link-hover-color: $secondary;
 $nav-pills-border-radius: 0;
 $nav-pills-link-active-color: black;
 $nav-pills-link-active-bg: transparent;
-.nav-pills {
-    .nav-link {  
-      border: 1px solid black;
-      border-bottom: 1px solid $primary;
-    }
-    .nav-link.active,
-    .show > .nav-link {
-      border-bottom: 3px solid $secondary;
-    }
-}
 
 //Accordion
 $accordion-icon-color: $primary;
@@ -128,14 +118,16 @@ $navbar-dark-hover-color: $secondary;
 //Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-//Cards
-.card-header {
+//Customized Cards
+.card-header-custom {
+    @extend .card-header;
     border-bottom-style: dotted;
     border-bottom-width: 3px;
 }
 
-//Buttons
-.btn-primary {
+//Customized buttons
+.btn-primary-custom {
+    @extend .btn-primary;
     &:hover {
         color: $primary;
         background-color: white;
@@ -143,7 +135,8 @@ $navbar-dark-hover-color: $secondary;
         box-shadow: 2px 2px 2px grey;
     }
 }
-.btn-secondary {
+.btn-secondary-custom {
+    @extend .btn-secondary;
     color: white;
     &:hover {
         color: $secondary;
@@ -152,7 +145,8 @@ $navbar-dark-hover-color: $secondary;
         box-shadow: 2px 2px 2px grey;
     }
 }
-.btn-outline-dark {
+.btn-outline-dark-custom {
+    @extend .btn-outline-dark;
     border: white;
     &:hover {
         color: inherit;
@@ -161,3 +155,18 @@ $navbar-dark-hover-color: $secondary;
         box-shadow: 2px 2px 2px grey;
     }
 }
+
+//Customize tabs
+.nav-pills {
+    .nav-link-custom {  
+        @extend .nav-link;
+        border: none;
+        border-bottom: 1px solid grey;
+    }
+    .nav-link-custom.active,
+    .show > .nav-link-custom {
+        @extend .nav-link;
+        border-bottom: 3px solid $secondary;
+    }
+}
+
