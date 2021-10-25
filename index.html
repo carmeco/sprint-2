@@ -22,9 +22,9 @@
           <a class="navbar-brand" href="index.html">
             <img src="images/logo-bookmark.svg" alt="Bookmark" width="auto" height="24">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <span class="navbar-toggler-icon"></span>
-          </button>                
+          </button>               
           <!-- Menu -->
           <div class="collapse navbar-collapse justify-content-end text-uppercase" id="navbarSupportedContent">
             <div class="navbar-nav">
@@ -32,6 +32,33 @@
               <a class="nav-link" href="#">Pricing</a>
               <a class="nav-link" href="#">Contact</a>
               <button class="btn btn-secondary-custom text-uppercase px-4">Login</button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content container pt-3">
+              <div class="modal-header">
+                <a class="navbar-brand" href="index.html">
+                  <img src="images/logo-bookmark-dark.svg" alt="Bookmark" width="auto" height="24">
+                </a>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="navbar-nav text-uppercase text-center fs-5">
+                  <a class="nav-link-modal text-white" href="#">Features</a>
+                  <a class="nav-link-modal text-white" href="#">Pricing</a>
+                  <a class="nav-link-modal text-white" href="#">Contact</a>
+                  <button class="btn btn-outline-light text-uppercase fs-5 my-4 border-2">Login</button>
+                </div>
+                <div class="modal-footer justify-content-center">
+                  <div class="social-nav d-flex">
+                    <a class="nav-link" href="#"><img src="images/icon-facebook.svg" alt="Facebook" width="auto" height="20"></a>
+                    <a class="nav-link" href="#"><img src="images/icon-twitter.svg" alt="Twitter" width="auto" height="20"></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

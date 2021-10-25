@@ -11,7 +11,31 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs16" />
+     id="defs16">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect1904"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1900">
+      <path
+         d="M 9,9 V 19 L 12.54,15.56 16.078,19 V 9 a 2,2 0 0 0 -2,-2 H 11 A 2,2 0 0 0 9,9 Z"
+         fill="#ffffff"
+         id="path1902"
+         style="display:none;fill:#ffaaaa" />
+      <path
+         id="lpe_path-effect1904"
+         style="fill:#ffaaaa"
+         class="powerclip"
+         d="M -5,-5 H 30 V 30 H -5 Z M 9,9 V 19 L 12.54,15.56 16.078,19 V 9 a 2,2 0 0 0 -2,-2 H 11 A 2,2 0 0 0 9,9 Z" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="namedview14"
      pagecolor="#ffffff"
@@ -21,13 +45,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="8.9121622"
-     inkscape:cx="74"
-     inkscape:cy="12.45489"
-     inkscape:window-width="1920"
-     inkscape:window-height="1015"
+     inkscape:zoom="6.3018503"
+     inkscape:cx="13.250077"
+     inkscape:cy="12.456659"
+     inkscape:window-width="1366"
+     inkscape:window-height="740"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="312"
      inkscape:window-maximized="1"
      inkscape:current-layer="g10" />
   <g
@@ -40,18 +64,17 @@
        fill-rule="nonzero"
        id="path2"
        style="fill:#ffffff;fill-opacity:1" />
-    <g
-       id="g8">
-      <circle
-         fill="#5267DF"
-         cx="12.5"
-         cy="12.5"
-         r="12.5"
-         id="circle4" />
-      <path
-         d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z"
-         fill="#FFF"
-         id="path6" />
-    </g>
+    <path
+       fill="#5267df"
+       id="circle4"
+       clip-path="url(#clipPath1900)"
+       inkscape:path-effect="#path-effect1904"
+       sodipodi:type="arc"
+       sodipodi:cx="12.5"
+       sodipodi:cy="12.5"
+       sodipodi:rx="12.5"
+       sodipodi:ry="12.5"
+       d="M 25,12.5 A 12.5,12.5 0 0 1 12.5,25 12.5,12.5 0 0 1 0,12.5 12.5,12.5 0 0 1 12.5,0 12.5,12.5 0 0 1 25,12.5 Z"
+       style="fill:#ffffff;fill-opacity:1" />
   </g>
 </svg>
