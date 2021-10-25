@@ -4622,7 +4622,7 @@ textarea.form-control-lg {
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
-.card > .card-header + .list-group, .card > .card-header-custom + .list-group,
+.card > .card-header + .list-group,
 .card > .list-group + .card-footer {
   border-top: 0;
 }
@@ -4649,13 +4649,13 @@ textarea.form-control-lg {
   margin-left: 1rem;
 }
 
-.card-header, .card-header-custom {
+.card-header, .card-custom .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
-.card-header:first-child, .card-header-custom:first-child {
+.card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
 }
 
@@ -4729,8 +4729,7 @@ textarea.form-control-lg {
     border-bottom-right-radius: 0;
   }
   .card-group > .card:not(:last-child) .card-img-top,
-.card-group > .card:not(:last-child) .card-header,
-.card-group > .card:not(:last-child) .card-header-custom {
+.card-group > .card:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
   .card-group > .card:not(:last-child) .card-img-bottom,
@@ -4742,8 +4741,7 @@ textarea.form-control-lg {
     border-bottom-left-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-img-top,
-.card-group > .card:not(:first-child) .card-header,
-.card-group > .card:not(:first-child) .card-header-custom {
+.card-group > .card:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
   .card-group > .card:not(:first-child) .card-img-bottom,
@@ -12526,11 +12524,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.card-header-custom {
-  border-bottom-style: dotted;
-  border-bottom-width: 3px;
-}
-
 .btn-primary-custom:hover {
   color: #5265E1;
   background-color: white;
@@ -12565,4 +12558,19 @@ textarea.form-control-lg {
 .nav-pills .nav-link-custom.active,
 .nav-pills .show > .nav-link-custom {
   border-bottom: 3px solid #FA5959;
+}
+
+.card-custom {
+  border-radius: 1.5rem;
+  width: auto;
+}
+.card-custom:nth-child(2n) {
+  align-self: center;
+}
+.card-custom:nth-child(3n) {
+  align-self: end;
+}
+.card-custom .card-header {
+  border-bottom-style: dotted;
+  border-bottom-width: 3px;
 }/*# sourceMappingURL=custom.css.map */

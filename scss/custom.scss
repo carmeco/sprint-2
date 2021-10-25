@@ -118,13 +118,6 @@ $navbar-dark-hover-color: $secondary;
 //Import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-//Customized Cards
-.card-header-custom {
-    @extend .card-header;
-    border-bottom-style: dotted;
-    border-bottom-width: 3px;
-}
-
 //Customized buttons
 .btn-primary-custom {
     @extend .btn-primary;
@@ -169,4 +162,22 @@ $navbar-dark-hover-color: $secondary;
         border-bottom: 3px solid $secondary;
     }
 }
+
+//Customized Cards
+.card-custom {
+    border-radius: 1.5rem;
+    width: auto;
+    &:nth-child(2n){
+        align-self: center;
+    }
+    &:nth-child(3n){
+        align-self: end;
+    }
+    .card-header {
+        @extend .card-header;
+        border-bottom-style: dotted;
+        border-bottom-width: 3px;
+    }
+}
+
 
