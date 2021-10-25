@@ -25,12 +25,6 @@ p {
 //Navbar
 $navbar-padding-y: 2rem;
 $navbar-light-hover-color: $secondary;
-.navbar-nav {
-    column-gap: 2rem;
-}
-.navbar-toggler {
-    border-width: 0;
-}
 
 //Buttons
 $btn-font-weight: bold;
@@ -149,6 +143,29 @@ $navbar-dark-hover-color: $secondary;
     }
 }
 
+//Customized navbar 
+.navbar-custom {
+    @extend .navbar;
+    .navbar-toggler {
+        border-width: 0;
+    }
+    .navbar-nav {
+        column-gap: 2rem;
+    }
+    .navbar-collapse {
+        background: rgba($dark, 0.9);
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+}
+
+
+
+
 //Customize tabs
 .nav-pills {
     .nav-link-custom {  
@@ -179,5 +196,8 @@ $navbar-dark-hover-color: $secondary;
         border-bottom-width: 3px;
     }
 }
+
+
+
 
 

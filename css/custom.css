@@ -5,15 +5,6 @@ p {
   padding: 0.8rem 0;
 }
 
-.navbar-nav {
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-}
-
-.navbar-toggler {
-  border-width: 0;
-}
-
 .frame {
   display: flex;
   width: 100%;
@@ -4105,7 +4096,7 @@ textarea.form-control-lg {
   display: block;
 }
 
-.navbar {
+.navbar, .navbar-custom {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -4114,13 +4105,19 @@ textarea.form-control-lg {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.navbar > .container,
+.navbar > .container, .navbar-custom > .container,
 .navbar > .container-fluid,
+.navbar-custom > .container-fluid,
 .navbar > .container-sm,
+.navbar-custom > .container-sm,
 .navbar > .container-md,
+.navbar-custom > .container-md,
 .navbar > .container-lg,
+.navbar-custom > .container-lg,
 .navbar > .container-xl,
-.navbar > .container-xxl {
+.navbar-custom > .container-xl,
+.navbar > .container-xxl,
+.navbar-custom > .container-xxl {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
@@ -12549,6 +12546,25 @@ textarea.form-control-lg {
   background-color: white;
   outline: 1px solid #242946;
   box-shadow: 2px 2px 2px grey;
+}
+
+.navbar-custom {
+  /* .navbar-collapse {
+      background: rgba($dark, 0.9);
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%
+  } */
+}
+.navbar-custom .navbar-toggler {
+  border-width: 0;
+}
+.navbar-custom .navbar-nav {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
 
 .nav-pills .nav-link-custom {
