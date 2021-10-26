@@ -162,7 +162,7 @@ p {
     .rectangle {
         position: absolute;
         top: 2rem;
-        width: 150%;
+        width: 90%;
         height: 90%;
         background-color: #5368df;
         z-index: -1;
@@ -175,34 +175,6 @@ p {
         height: 100%;
         right: 3rem;
         border-bottom-right-radius: 10rem;
-    }
-    @media screen and (min-width: 576px) {
-        .rectangle.right {
-            top: 3rem;
-            left: 6rem;
-        }
-        .rectangle.left {
-            right: 5rem;
-        }    
-    }
-    @media screen and (min-width: 768px) {
-        .rectangle.right {
-            top: 4rem;
-            left: 8rem;
-        }
-        .rectangle.left {
-            right: 7rem;
-        }    
-    }
-    @media screen and (min-width: 992px) {
-        .rectangle.right {
-            left: 11rem;
-        }
-    }
-    @media screen and (min-width: 1200px) {
-        .rectangle.right {
-            left: 13rem;
-        }
     }
 }
 

@@ -12552,7 +12552,7 @@ p {
 .frame .rectangle {
   position: absolute;
   top: 2rem;
-  width: 150%;
+  width: 90%;
   height: 90%;
   background-color: #5368df;
   z-index: -1;
@@ -12565,32 +12565,4 @@ p {
   height: 100%;
   right: 3rem;
   border-bottom-right-radius: 10rem;
-}
-@media screen and (min-width: 576px) {
-  .frame .rectangle.right {
-    top: 3rem;
-    left: 6rem;
-  }
-  .frame .rectangle.left {
-    right: 5rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .frame .rectangle.right {
-    top: 4rem;
-    left: 8rem;
-  }
-  .frame .rectangle.left {
-    right: 7rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .frame .rectangle.right {
-    left: 11rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .frame .rectangle.right {
-    left: 13rem;
-  }
 }/*# sourceMappingURL=custom.css.map */
