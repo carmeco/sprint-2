@@ -12552,17 +12552,17 @@ p {
 .frame .rectangle {
   position: absolute;
   top: 2rem;
-  width: 90%;
+  width: 800px;
   height: 90%;
   background-color: #5368df;
   z-index: -1;
 }
 .frame .rectangle.right {
-  left: 4rem;
+  left: 30%;
   border-bottom-left-radius: 8rem;
 }
 .frame .rectangle.left {
   height: 100%;
-  right: 3rem;
+  right: 20%;
   border-bottom-right-radius: 10rem;
 }/*# sourceMappingURL=custom.css.map */
